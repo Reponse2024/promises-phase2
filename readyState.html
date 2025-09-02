@@ -19,7 +19,14 @@
 	<div class="completion">Wrapper hasn't resolved yet!</div>
 	<img class="responsive" src="image.png" height="2448" width="3264" alt="SF Market Street">
 	<p><a href="https://commons.wikimedia.org/wiki/File:San_Francisco_Market_Street_between_4th_and_5th_St.jpg">Photo: Andreas Praefcke (Own work) [GFDL (http://www.gnu.org/copyleft/fdl.html) or CC BY 3.0 (http://creativecommons.org/licenses/by/3.0)], via Wikimedia Commons</a></p>
-	<script>
+	
+    <!-- Instructions
+1. In the workspace below, review the files in the Exercise folder.
+2. Set network throttling so that the page isn't ready instantly. (Also, it's generally a good practice to have some throttling when testing sites. It'll help you see your site's performance from your users' perspectives.)
+3. Wrap an event listener for readystatechange in a Promise.
+4. If document.readyState is not 'loading', resolve().
+5. Test by chaining wrapperResolved(). If all goes well, you should see "Resolved" on the page! -->
+    <script>
 		function ready() {
 
             return new Promise ((resolve)=>{
